@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tik Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="turn">
+      <p id="player"></p>
+      <img id="rbtn" src="reset-32.svg" alt="reset" onclick="resetbtn()" />
+    </div>
+    <div class="container">
+      <div class="line1 lines"></div>
+      <div class="line2 lines"></div>
+      <div class="line3 lines"></div>
+      <div class="line4 lines"></div>
+      <div class="box">
+        <div class="box1 boxes"></div>
+        <div class="box2 boxes"></div>
+        <div class="box3 boxes"></div>
+        <div class="box4 boxes"></div>
+        <div class="box5 boxes"></div>
+        <div class="box6 boxes"></div>
+        <div class="box7 boxes"></div>
+        <div class="box8 boxes"></div>
+        <div class="box9 boxes"></div>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".boxes").forEach(function (box) {
+        box.addEventListener("click", change);
+        counter = 1;
+        var player = document.getElementById("player");
+        player.innerHTML = "player 1 its your turn";
+        function change() {
+          if (counter % 2 == 0) {
+            this.style.backgroundImage = "url('ooo.png')";
+            player.innerHTML = "player 1 its your turn";
+          } else {
+            this.style.backgroundImage = "url('xxx.png')";
+            player.innerHTML = "player 2 its your turn";
+          }
+          counter += 1;
+        }
+      });
+      function resetbtn() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
