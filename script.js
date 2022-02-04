@@ -6,10 +6,10 @@ document.querySelectorAll(".boxes").forEach(function (box) {
   function change() {
     if (this.style.backgroundImage == "") {
       if (counter % 2 == 0) {
-        this.style.backgroundImage = "url('ooo.png')";
+        this.style.backgroundImage = "url('images/ooo.png')";
         player.innerHTML = "player 1 its your turn";
       } else {
-        this.style.backgroundImage = "url('xxx.png')";
+        this.style.backgroundImage = "url('images/xxx.png')";
         player.innerHTML = "player 2 its your turn";
       }
       counter += 1;
