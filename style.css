@@ -85,7 +85,7 @@ body {
 .lines {
   height: 100%;
   width: 100%;
-  background-image: url("line.png");
+  background-image: url("images/line.png");
   background-size: 100%;
   position: absolute;
   border: none;
