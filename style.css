@@ -3,8 +3,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   color: #fff;
 }
 
@@ -76,7 +76,6 @@ body {
 }
 
 .container .box .boxes {
-  z-index: 11;
   background-size: 70%;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -88,7 +87,6 @@ body {
   background-image: url("images/line.png");
   background-size: 100%;
   position: absolute;
-  border: none;
   z-index: -1;
 }
 
